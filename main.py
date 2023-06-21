@@ -10,8 +10,8 @@ from rand_vin import generate_vin
 
 
 userpwd = getpass.getpass("Podaj hasło: ")
-conn = oracledb.connect(user='s100747', password=userpwd, 
-                        host='217.173.198.135', port=1521, service_name='tpdb')
+conn = oracledb.connect(user='login', password=userpwd, 
+                        host='host', port=1521, service_name='tpdb')
 
 fake = Faker(['pl_PL'])
 fake.add_provider(VehicleProvider)
